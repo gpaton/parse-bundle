@@ -1,0 +1,24 @@
+{
+  "name": "gpaton/parse-bundle",
+  "type": "symfony-bundle",
+  "description": "Integration for Parse.com PHP SDK in your Symfony2 Project",
+  "keywords": ["parse", "Parse.com", "sdk", "bundle", "symfony"],
+  "homepage": "http://gpaton.github.com",
+  "license": "GPL v2",
+  "authors": [
+    {
+      "name": "Guillaume Paton",
+      "homepage": "https://github.com/gpaton"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "symfony/framework-bundle": "~2.1",
+    "parse/php-sdk": "1.1.*"
+  },
+  "autoload": {
+    "psr-0": { "Gpaton\\ParseBundle": "" }
+  },
+  "target-dir": "Gpaton/ParseBundle"
+}

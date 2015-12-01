@@ -1,0 +1,7 @@
+services:
+    gpaton.parse.push:
+        class: Gpaton\ParseBundle\Parse\Push
+        arguments:
+            - %gpaton_parse.app_id%
+            - %gpaton_parse.rest_key%
+            - %gpaton_parse.master_key%
