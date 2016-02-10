@@ -33,11 +33,12 @@ class Push extends Parse
      * @param $data
      * @param null|array $channels
      * @param null|ParseQuery $where
+     * @param null|\DateTime $pushTime
      * @return mixed
      * @throws ParseException
      * @throws \Exception
      */
-    public function send($data, $channels = null, ParseQuery $where = null)
+    public function send($data, $channels = null, ParseQuery $where = null, \DateTime $pushTime = null)
     {
         $params['data'] = $data;
 
@@ -55,6 +56,11 @@ class Push extends Parse
 
         if (null !== $where) {
             $params['where'] = $where;
+        }
+
+        if (null !== $pushTime) {
+            $params['push_time'] = $pushTime;
+            $params['local_time'] = new \DateTime();
         }
 
         return ParsePush::send($params);
