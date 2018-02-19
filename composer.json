@@ -4,7 +4,7 @@
   "description": "Integration for Parse.com PHP SDK in your Symfony2 Project",
   "keywords": ["parse", "Parse.com", "sdk", "bundle", "symfony"],
   "homepage": "http://gpaton.github.com",
-  "license": "GPL v2",
+  "license": "GPL-2.0-only",
   "authors": [
     {
       "name": "Guillaume Paton",
